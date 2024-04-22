@@ -10,15 +10,11 @@ public class APLine
   }
 
   public double getSlope(){
-  return (-1*a)/b;
+  return -(a/((double)b));
   }
    public boolean isOnLine(int x, int y){
-  if((a*x)+(b*y)+c==0){
-  return true;
-
-  }
-return false;
-   }
+  return (a*x)+(b*y)+c==0;
+    }
 
 
 
